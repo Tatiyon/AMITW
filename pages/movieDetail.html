@@ -2,9 +2,61 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Détails du film</title>
+    <title>Détails</title>
+    <link rel="stylesheet" type="text/css" href="../libraries/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../libraries/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/details.css">
+    <script src="../libraries/jquery-3.3.1.min.js"></script>
+    <script src="../libraries/jquery-ui.min.js"></script>
+    <script src="../libraries/themoviedb.js"></script>
+    <script src="../resources/js/functionsDetail.js"></script>
 </head>
 <body>
 
+<div class="wrapper">
+
+    <header id="header-container" class="box a">
+        <div class="box b">
+            <a href="movieList.html?movieType=movie" class="fs20 onglets">Films</a>
+            <a href="#" class="fs20 onglets serie" onclick="alert('Et non ! :-)')">Séries</a>
+        </div>
+
+        <div class="box c">
+            <form id="formRecherche" action="movieDetail.html" class="center">
+                <input id="recherche" class="recherche" type="text" placeholder="Saisissez un titre de film...">
+                <input type="submit" class="btnRecherche">
+            </form>
+        </div>
+
+        <div id="logoDiv" class="box e">
+            <a href="homepage.html"><img id="logo" src="../resources/images/logo.jpg" alt=""></a>
+
+        </div>
+    </header>
+
+    <div id="movie-container" class="box">
+        <div class="box movie-block">
+            <h2 id="movieName"></h2>
+            <img src="https://nsm01.casimages.com/img/2008/04/27//080427083850263771996724.jpg" alt="" id="moviePic">
+        </div>
+        <div class="box">
+            <h4>Date de sortie</h4>
+            <p class="fs20"><label id="movieReleaseDate" class="fs20"></label></p>
+            <h4>Description</h4>
+            <p id="movieDescription" class="fs16"></p>
+            <h4>Moyenne des votes</h4>
+            <p id="movieVote" class="fs16"></p>
+
+            <h4>Genres</h4>
+            <p>
+                <ul id="genres"></ul>
+            </p>
+        </div>
+    </div>
+
+
+
+
+</div>
 </body>
 </html>

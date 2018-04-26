@@ -1,0 +1,58 @@
+$color : #444;
+$color2 : #CCC;
+body {
+    margin: 10px;
+}
+
+.box {
+    background-color: $color;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+
+}
+
+.box .box {
+    background-color: $color2;
+    color: $color;
+}
+
+#header-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-rows: auto;
+}
+
+#movie-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: auto;
+}
+
+img {
+    max-width: 100%;
+    /*min-height: 50px;*/
+    max-height: 300px;
+    align-self: stretch;
+}
+
+#logoDiv{
+    text-align: center;
+}
+
+#logo {
+    max-height: 150px;
+}
+
+fieldset
+{
+    background-color: $color2;
+    max-width:auto;
+    padding:16px;
+}
+legend
+{
+    margin-bottom:0px;
+    margin-left:16px;
+}
